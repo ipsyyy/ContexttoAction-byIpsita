@@ -83,3 +83,7 @@ video/
 /SUBMISSION_STATUS.md
 /tests/smoke_workspace.cjs
 README.md
+
+AGENTS.md
+BUILD_PLAN.md
+SUBMISSION_CHECKPOINT.md
