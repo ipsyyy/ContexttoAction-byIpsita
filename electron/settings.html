@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Context to Action by Ipsita · Settings</title>
+<link rel="stylesheet" href="colors_and_type.css">
+<link rel="stylesheet" href="chief.css">
+<style>
+  html, body {
+    margin: 0; padding: 0;
+    width: 640px; height: 640px;
+    overflow: hidden;
+    background: var(--surface-card);
+  }
+  #root { width: 640px; height: 640px; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../node_modules/react/umd/react.production.min.js"></script>
+<script src="../node_modules/react-dom/umd/react-dom.production.min.js"></script>
+<script src="../node_modules/@babel/standalone/babel.min.js"></script>
+<script type="text/babel" src="components.jsx"></script>
+<script type="text/babel" src="SettingsPanel.jsx"></script>
+<script type="text/babel">
+  ReactDOM.createRoot(document.getElementById('root')).render(<SettingsPanel />)
+</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+[00:01] Ada: The workshop example was a purple invoice router.
+[00:44] Lin: The router held low-confidence invoices for a human review.
+
+[01:15] Ada: Test a missing supplier ID by routing it to the review queue.
+[01:42] Lin: The provider confirmation must include an ID before marking it complete.
+
+[02:09] Ada: I had a sandwich for lunch and walked around the park.

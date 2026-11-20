@@ -1,0 +1,19 @@
+anthropic>=0.40.0
+websockets>=13.0
+python-dotenv>=1.0.0
+pytest>=9.0.0
+moss>=1.25,<2
+elevenlabs>=2.0.0
+numpy>=1.26,<3
+httpx>=0.27.0
+requests>=2.32.0
+certifi
+google-auth>=2.0.0
+google-auth-oauthlib>=1.0.0
+google-api-python-client>=2.0.0
+supermemory>=5.0,<6
+agentphone>=0.7.0
+# AgentMail — optional; powers backend/action/email_agentmail.py.
+# Absent SDK / absent AGENTMAIL_API_KEY = card-only fallback, demo still runs.
+agentmail>=0.5.0
+langsmith==0.15.0

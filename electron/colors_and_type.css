@@ -1,0 +1,187 @@
+/* =============================================================
+   Chief — Design tokens (ElevenLabs-inspired, light mode)
+   All values verified at ≥4.5:1 against their intended bg.
+   ============================================================= */
+
+
+:root {
+  /* ---------- Canvas / surfaces (light) ---------- */
+  --canvas:         #f5f5f5;   /* page background (off-white, warm)            */
+  --canvas-soft:    #fafafa;
+  --canvas-deep:    #0c0a09;   /* near-black, for inverted bands               */
+  --surface-card:   #ffffff;   /* cards on canvas                              */
+  --surface-strong: #f0efed;   /* recessed wells, hover row                    */
+  --surface-dark:        #0c0a09;
+  --surface-dark-elevated:#1c1917;
+
+  /* ---------- Ink (text) ---------- */
+  --ink:            #0c0a09;   /* primary text — 18.8:1 on canvas              */
+  --ink-active:     #292524;
+  --body:           #4e4e4e;   /* 8.4:1                                        */
+  --body-strong:    #292524;
+  --muted:          #777169;   /* 4.6:1 — labels / captions                    */
+  --muted-soft:     #a8a29e;   /* not for text on light                        */
+  --on-primary:     #ffffff;   /* text on ink-pill button                      */
+  --on-dark:        #ffffff;
+  --on-dark-soft:   #a8a29e;
+
+  /* ---------- Hairlines ---------- */
+  --hairline-soft:    #f0efed;
+  --hairline:         #e7e5e4;   /* default border                              */
+  --hairline-strong:  #d6d3d1;
+
+  /* ---------- Atmospheric gradient hues (used very sparingly) ---------- */
+  --hue-mint:     #a7e5d3;   /* listening / live                              */
+  --hue-peach:    #f4c5a8;   /* whispering / attention                        */
+  --hue-lavender: #c8b8e0;   /* processing                                    */
+  --hue-sky:      #a8c8e8;
+  --hue-rose:     #e8b8c4;
+  --hue-mint-tint:    rgba(167, 229, 211, 0.32);
+  --hue-peach-tint:   rgba(244, 197, 168, 0.36);
+  --hue-lavender-tint:rgba(200, 184, 224, 0.32);
+
+  /* ---------- Semantic ---------- */
+  --semantic-error:   #b8463a;
+  --semantic-error-bg: #fbeae6;
+  --semantic-success: #2e7d59;
+
+  /* ---------- Focus ---------- */
+  --focus-ring: rgba(12, 10, 9, 0.20);
+
+  /* ---------- Spacing (4-unit base) ---------- */
+  --s-1:   2px;
+  --s-2:   4px;
+  --s-3:   6px;
+  --s-4:   8px;
+  --s-5:  12px;
+  --s-6:  16px;
+  --s-7:  20px;
+  --s-8:  24px;
+  --s-9:  32px;
+  --s-10: 48px;
+  --s-section: 96px;        /* between bands                                    */
+
+  /* ---------- Radii ---------- */
+  --r-xs:   2px;
+  --r-sm:   6px;
+  --r-md:  10px;
+  --r-lg:  16px;            /* whisper / action cards                            */
+  --r-pill: 999px;          /* ALL buttons are pills now                         */
+
+  /* ---------- Elevation ---------- */
+  --shadow-1: 0 1px 2px rgba(12,10,9,.04);
+  --shadow-2:
+    0 1px 0 rgba(12,10,9,.02),
+    0 4px 12px rgba(12,10,9,.06),
+    0 1px 0 rgba(255,255,255,.6) inset;
+  --shadow-overlay:
+    0 1px 0 rgba(12,10,9,.03),
+    0 18px 40px rgba(12,10,9,.10),
+    0 4px 10px rgba(12,10,9,.05),
+    0 1px 0 rgba(255,255,255,.8) inset;
+
+  /* ---------- Motion ---------- */
+  --ease-in-out:  cubic-bezier(.6,.0,.4,1);
+  --ease-enter:   cubic-bezier(.2,.8,.2,1);
+  --ease-exit:    cubic-bezier(.5,0,.8,.4);
+  --dur-fast:     120ms;
+  --dur-base:     180ms;
+  --dur-slow:     260ms;
+  --dur-radar:    1600ms;
+
+  /* ---------- Type ---------- */
+  /* One family across the system. Close to Waldenburg metrically. */
+  --font-display: 'Geist', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-ui:      'Geist', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-mono:    'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* sizes */
+  --t-9:   9px;
+  --t-10: 10px;
+  --t-11: 11px;
+  --t-12: 12px;
+  --t-13: 13px;
+  --t-14: 14px;
+  --t-15: 15px;
+  --t-16: 16px;
+  --t-18: 18px;
+  --t-22: 22px;
+  --t-28: 28px;
+  --t-40: 40px;
+  --t-64: 64px;
+
+  /* tracking */
+  --track-tight:     -0.025em;
+  --track-tighter:   -0.035em;
+  --track-display:   -0.03em;
+  --track-normal:     0;
+  --track-label:      0.04em;
+  --track-eyebrow:    0.14em;     /* generous, editorial caps                   */
+
+  /* weights */
+  --w-light:    400;   /* Geist 400 — substantial but editorial */
+  --w-regular:  400;
+  --w-medium:   500;
+  --w-semi:     600;
+}
+
+/* ----------- Semantic role helpers ----------- */
+.t-eyebrow {
+  font: var(--w-medium) var(--t-11)/1 var(--font-ui);
+  letter-spacing: var(--track-eyebrow);
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.t-label {
+  font: var(--w-medium) var(--t-12)/1.2 var(--font-ui);
+  letter-spacing: var(--track-label);
+  color: var(--body);
+}
+.t-meta {
+  font: var(--w-regular) var(--t-13)/1.4 var(--font-ui);
+  color: var(--muted);
+}
+.t-body {
+  font: var(--w-regular) var(--t-15)/1.6 var(--font-ui);
+  color: var(--body);
+}
+.t-body-strong {
+  font: var(--w-medium) var(--t-15)/1.5 var(--font-ui);
+  color: var(--ink);
+}
+.t-payload {                                /* the whispered fact — mono kept */
+  font: var(--w-regular) var(--t-15)/1.45 var(--font-mono);
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.t-h3 {
+  font: var(--w-light) var(--t-22)/1.25 var(--font-display);
+  letter-spacing: var(--track-tight);
+  color: var(--ink);
+}
+.t-h2 {
+  font: var(--w-light) var(--t-28)/1.15 var(--font-display);
+  letter-spacing: var(--track-display);
+  color: var(--ink);
+}
+.t-h1 {
+  font: var(--w-light) var(--t-40)/1.08 var(--font-display);
+  letter-spacing: var(--track-display);
+  color: var(--ink);
+}
+.t-display {
+  font: var(--w-light) var(--t-64)/1.04 var(--font-display);
+  letter-spacing: var(--track-tighter);
+  color: var(--ink);
+}
+
+/* ----------- Reset ----------- */
+*, *::before, *::after { box-sizing: border-box; }
+html, body {
+  margin: 0; padding: 0;
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

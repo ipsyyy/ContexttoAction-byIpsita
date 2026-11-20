@@ -1,0 +1,23 @@
+{
+  "name": "context-to-action-by-ipsita",
+  "version": "0.0.1",
+  "description": "Ipsita’s Mac workspace for conversations, decisions, and follow-ups",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "electron .",
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^33.0.0"
+  },
+  "dependencies": {
+    "@babel/standalone": "7.29.0",
+    "@huggingface/transformers": "^4.2.0",
+    "dompurify": "3.3.0",
+    "marked": "15.0.12",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "ws": "^8.18.0"
+  },
+  "productName": "Context to Action by Ipsita"
+}

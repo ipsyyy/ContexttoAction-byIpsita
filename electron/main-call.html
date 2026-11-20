@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Context to Action by Ipsita</title>
+<link rel="stylesheet" href="colors_and_type.css">
+<link rel="stylesheet" href="chief.css">
+<link rel="stylesheet" href="workspace.css">
+</head>
+<body>
+<div id="root"></div>
+<script src="../node_modules/react/umd/react.production.min.js"></script>
+<script src="../node_modules/react-dom/umd/react-dom.production.min.js"></script>
+<script src="../node_modules/@babel/standalone/babel.min.js"></script>
+<script src="../node_modules/marked/lib/marked.umd.js"></script>
+<script src="../node_modules/dompurify/dist/purify.min.js"></script>
+<script type="text/babel" src="MainCallPanel.jsx"></script>
+<script type="text/babel" src="WorkspacePanel.jsx"></script>
+<script type="text/babel" src="HomePanel.jsx"></script>
+<script type="text/babel">
+  ReactDOM.createRoot(document.getElementById('root')).render(<MainCallPanel />)
+</script>
+</body>
+</html>

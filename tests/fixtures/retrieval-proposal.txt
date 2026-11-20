@@ -1,0 +1,4 @@
+Synthetic follow-up for the fictional document assistant.
+Participant: I propose three sequential retrieval passes and longer sections instead of one retrieval pass.
+Participant: The proposed retrieval change has no benchmark results yet.
+User: Compare the latency budget and count retrieval failures before adopting a new approach.

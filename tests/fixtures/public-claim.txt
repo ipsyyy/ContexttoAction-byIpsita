@@ -1,0 +1,3 @@
+Participant: Microsoft acquired GitHub in 2022 for $12 billion.
+User: I think both the year and the amount may be wrong. Use the original Microsoft announcement when we check.
+User: Save the fact-check request for later review. Do not search now.

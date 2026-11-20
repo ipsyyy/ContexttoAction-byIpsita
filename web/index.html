@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse conversations, saved insights, and follow-up drafts.">
+  <title>Context to Action by Ipsita</title>
+  <link rel="stylesheet" href="workspace.css">
+  <style>
+    #root { display:flex; flex-direction:column; }
+    .workspace-page { font-size:1rem; }
+    .workspace-nav button, .workspace-button, .workspace-filename { font-size:.875rem; }
+    .web-notice { padding:8px 22px; margin:0; color:var(--text-secondary); background:var(--paper); }
+    .web-fields { display:flex; flex-wrap:wrap; gap:12px 24px; margin:14px 0; }
+    .web-fields label { display:grid; gap:6px; }
+    .web-source { padding:14px 18px; margin-top:16px; }
+    .web-source pre { white-space:pre-wrap; overflow-wrap:anywhere; }
+    .web-chat-container { min-height:0; overflow:auto; }
+    .web-chat form { margin:14px 0; }
+    .web-chat textarea { box-sizing:border-box; }
+    .web-answer { padding:12px 16px; margin-bottom:10px; }
+    .web-answer h3 { margin-top:0; }
+  </style>
+  <script defer src="react.js"></script>
+  <script defer src="react-dom.js"></script>
+  <script defer src="marked.js"></script>
+  <script defer src="purify.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body><div id="root"></div></body>
+</html>

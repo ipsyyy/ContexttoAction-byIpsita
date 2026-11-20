@@ -1,0 +1,4 @@
+Synthetic engineering review for a fictional document assistant.
+User: The team chose one retrieval pass with sections kept intact.
+User: The reason for one retrieval pass was a strict latency budget.
+Participant: In six failed retrieval examples, splitting sections removed their headings.
